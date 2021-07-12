@@ -26,10 +26,13 @@ for A in range(1, 21, 1):
         values.append((f"A: {A}, B: {B}", max_years))
 		
 # Find the largest value in the list
+years = []
 max_years = 0
 for item in values:
     if item[1] > max_years:
         max_years = item[1]
+	years = item[0]
+print(years[0])
 print(max_years)
 
 
